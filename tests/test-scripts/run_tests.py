@@ -1,11 +1,13 @@
-# -*- coding: utf-8 -*-
 import os
 import sys
 import time
 import argparse
 from datetime import datetime
-from playwright.sync_api import sync_playwright
 
+# Cho phép chạy script từ bất kỳ thư mục nào
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from playwright.sync_api import sync_playwright
 from test_data import ALL_TEST_CASES
 
 BUILD_DESCRIPTIONS = {
