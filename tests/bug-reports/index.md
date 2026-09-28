@@ -51,6 +51,52 @@ Tổng hợp tất cả các lỗi được phát hiện từ quá trình chạy
 
 ---
 
+## Danh sách lỗi trên Build 5 (Tổng: 9 lỗi)
+
+| Bug ID | Test Case ID | Module | Tiêu đề lỗi | Severity | Priority | File chi tiết |
+|---|---|---|---|---|---|---|
+| **BUG-B5-01** | TC-CLEAR-002 | Clear | Clear khi chỉ nhập First Number (chưa tính toán) (Build 5) | `critical` | `P0` | [BUG-B5-01.md](build-5/BUG-B5-01.md) |
+| **BUG-B5-02** | TC-CLEAR-003 | Clear | Clear khi chỉ nhập Second Number (chưa tính toán) (Build 5) | `critical` | `P0` | [BUG-B5-02.md](build-5/BUG-B5-02.md) |
+| **BUG-B5-03** | TC-CLEAR-004 | Clear | Clear khi tất cả các trường đang trống (Build 5) | `critical` | `P0` | [BUG-B5-03.md](build-5/BUG-B5-03.md) |
+| **BUG-B5-04** | TC-CLEAR-006 | Clear | Clear sau khi thực hiện phép chia cho 0 (Build 5) | `critical` | `P0` | [BUG-B5-04.md](build-5/BUG-B5-04.md) |
+| **BUG-B5-05** | TC-CLEAR-010 | Clear | Clear sau khi tính toán xong, sau đó tính tiếp bình thường (Build 5) | `minor` | `P2` | [BUG-B5-05.md](build-5/BUG-B5-05.md) |
+| **BUG-B5-06** | TC-VALIDATE-001 | Input Validation | Bỏ trống cả hai trường dữ liệu đầu vào (Build 5) | `minor` | `P2` | [BUG-B5-06.md](build-5/BUG-B5-06.md) |
+| **BUG-B5-07** | TC-VALIDATE-002 | Input Validation | Bỏ trống trường First number khi thực hiện phép tính số học (Build 5) | `minor` | `P2` | [BUG-B5-07.md](build-5/BUG-B5-07.md) |
+| **BUG-B5-08** | TC-VALIDATE-003 | Input Validation | Bỏ trống trường Second number khi thực hiện phép tính số học (Build 5) | `minor` | `P2` | [BUG-B5-08.md](build-5/BUG-B5-08.md) |
+| **BUG-B5-09** | TC-VALIDATE-006 | Input Validation | Nhập chuỗi chỉ chứa khoảng trắng vào trường số (Build 5) | `minor` | `P2` | [BUG-B5-09.md](build-5/BUG-B5-09.md) |
+
+---
+
+## Danh sách lỗi trên Build 6 (Tổng: 6 lỗi)
+
+| Bug ID | Test Case ID | Module | Tiêu đề lỗi | Severity | Priority | File chi tiết |
+|---|---|---|---|---|---|---|
+| **BUG-B6-01** | TC-ARITH-015 | Arithmetic | Chia cho số 0 (Xử lý lỗi Divide by zero) (Build 6) | `major` | `P1` | [BUG-B6-01.md](build-6/BUG-B6-01.md) |
+| **BUG-B6-02** | TC-CLEAR-010 | Clear | Clear sau khi tính toán xong, sau đó tính tiếp bình thường (Build 6) | `minor` | `P2` | [BUG-B6-02.md](build-6/BUG-B6-02.md) |
+| **BUG-B6-03** | TC-VALIDATE-001 | Input Validation | Bỏ trống cả hai trường dữ liệu đầu vào (Build 6) | `minor` | `P2` | [BUG-B6-03.md](build-6/BUG-B6-03.md) |
+| **BUG-B6-04** | TC-VALIDATE-002 | Input Validation | Bỏ trống trường First number khi thực hiện phép tính số học (Build 6) | `minor` | `P2` | [BUG-B6-04.md](build-6/BUG-B6-04.md) |
+| **BUG-B6-05** | TC-VALIDATE-003 | Input Validation | Bỏ trống trường Second number khi thực hiện phép tính số học (Build 6) | `minor` | `P2` | [BUG-B6-05.md](build-6/BUG-B6-05.md) |
+| **BUG-B6-06** | TC-VALIDATE-006 | Input Validation | Nhập chuỗi chỉ chứa khoảng trắng vào trường số (Build 6) | `minor` | `P2` | [BUG-B6-06.md](build-6/BUG-B6-06.md) |
+## Danh sách lỗi trên Build 3 (Tổng: 13 lỗi)
+
+| Bug ID | Test Case ID | Module | Tiêu đề lỗi | Severity | Priority | File chi tiết |
+|---|---|---|---|---|---|---|
+| **BUG-B3-01** | TC-CONCAT-001 | Concatenate | Nối hai chuỗi chữ thông thường (Build 3) | `major` | `P1` | [BUG-B3-01.md](build-3/BUG-B3-01.md) |
+| **BUG-B3-02** | TC-CONCAT-003 | Concatenate | First number rỗng, Second number có giá trị (Build 3) | `major` | `P1` | [BUG-B3-02.md](build-3/BUG-B3-02.md) |
+| **BUG-B3-03** | TC-CONCAT-004 | Concatenate | First number có giá trị, Second number rỗng (Build 3) | `major` | `P1` | [BUG-B3-03.md](build-3/BUG-B3-03.md) |
+| **BUG-B3-04** | TC-CONCAT-006 | Concatenate | Nối chuỗi chứa ký tự đặc biệt (Build 3) | `major` | `P1` | [BUG-B3-04.md](build-3/BUG-B3-04.md) |
+| **BUG-B3-05** | TC-CONCAT-007 | Concatenate | Nối chuỗi có khoảng trắng (Build 3) | `major` | `P1` | [BUG-B3-05.md](build-3/BUG-B3-05.md) |
+| **BUG-B3-06** | TC-CONCAT-008 | Concatenate | Nối chuỗi chữ hoa và chữ thường (Build 3) | `major` | `P1` | [BUG-B3-06.md](build-3/BUG-B3-06.md) |
+| **BUG-B3-07** | TC-CONCAT-011 | Concatenate | Nối hai chuỗi giống nhau (Build 3) | `major` | `P1` | [BUG-B3-07.md](build-3/BUG-B3-07.md) |
+| **BUG-B3-08** | TC-CLEAR-006 | Clear | Clear sau khi thực hiện phép chia cho 0 (Build 3) | `critical` | `P0` | [BUG-B3-08.md](build-3/BUG-B3-08.md) |
+| **BUG-B3-09** | TC-CLEAR-010 | Clear | Clear sau khi tính toán xong, sau đó tính tiếp bình thường (Build 3) | `minor` | `P2` | [BUG-B3-09.md](build-3/BUG-B3-09.md) |
+| **BUG-B3-10** | TC-VALIDATE-001 | Input Validation | Bỏ trống cả hai trường dữ liệu đầu vào (Build 3) | `minor` | `P2` | [BUG-B3-10.md](build-3/BUG-B3-10.md) |
+| **BUG-B3-11** | TC-VALIDATE-002 | Input Validation | Bỏ trống trường First number khi thực hiện phép tính số học (Build 3) | `minor` | `P2` | [BUG-B3-11.md](build-3/BUG-B3-11.md) |
+| **BUG-B3-12** | TC-VALIDATE-003 | Input Validation | Bỏ trống trường Second number khi thực hiện phép tính số học (Build 3) | `minor` | `P2` | [BUG-B3-12.md](build-3/BUG-B3-12.md) |
+| **BUG-B3-13** | TC-VALIDATE-006 | Input Validation | Nhập chuỗi chỉ chứa khoảng trắng vào trường số (Build 3) | `minor` | `P2` | [BUG-B3-13.md](build-3/BUG-B3-13.md) |
+
+---
+
 ## Danh sách lỗi trên Build 7 (Tổng: 35 lỗi)
 
 | Bug ID | Test Case ID | Module | Tiêu đề lỗi | Severity | Priority | File chi tiết |
