@@ -1,45 +1,39 @@
-# TC-CLEAR-001 — Xóa dữ liệu máy tính
+# TC-CLEAR-001: Clear sau khi nhập đầy đủ dữ liệu và tính toán
 
-## Thông tin chung
+## Requirement ID
+FR-CLEAR-01
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CLEAR-001 |
-| Chức năng | Clear |
-| Mức độ ưu tiên | Medium |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Clear / Functional / Equivalence Partitioning
 
-## Mục tiêu
+## Preconditions
+- Truy cập được trang https://testsheepnz.github.io/BasicCalculator.html
+- Build đang chọn là Prototype
+- Trang đang ở trạng thái mặc định (chưa nhập gì)
 
-Xác minh nút Clear đưa biểu mẫu về trạng thái ban đầu.
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First Number      | 10    |
+| Second Number     | 5     |
+| Operation         | Add   |
+| Integers only     | Checked |
 
-## Điều kiện tiên quyết
+## Test steps
+1. Nhập giá trị `10` vào ô First Number
+2. Nhập giá trị `5` vào ô Second Number
+3. Chọn phép tính `Add` trong dropdown Operation
+4. Tích vào checkbox `Integers only`
+5. Nhấn nút **Calculate** → ghi nhận kết quả ở ô Answer
+6. Nhấn nút **Clear**
 
-- Truy cập được trang Basic Calculator.
-- Chọn build cần kiểm thử.
+## Expected result
+- Ô First Number bị xóa trống
+- Ô Second Number bị xóa trống
+- Ô Answer bị xóa trống
+- Dropdown Operation trở về giá trị mặc định (Add)
+- Checkbox Integers only trở về trạng thái mặc định (unchecked)
+- Trang sẵn sàng để nhập phép tính mới
 
-## Dữ liệu kiểm thử
-
-| Trường | Giá trị |
-|---|---|
-| First number | 10 |
-| Second number | 5 |
-| Operation | Add |
-| Integers only | Checked |
-
-## Các bước thực hiện
-
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Nhập dữ liệu và thực hiện phép tính | Answer có kết quả |
-| 2 | Nhấn Clear | Dữ liệu nhập và Answer được xóa |
-| 3 | Kiểm tra Operation và Integers only | Các điều khiển trở về trạng thái mặc định |
-
-## Kết quả mong đợi cuối cùng
-
-Biểu mẫu trở về trạng thái ban đầu và sẵn sàng cho phép tính mới.
-
-## Ghi chú
-
-Ghi lại bất kỳ trường hoặc lựa chọn nào không được reset.
+## Status / Related bugs
+Not Run / None
