@@ -1,46 +1,31 @@
-# TC-CONCAT-011 — Nối hai chuỗi giống nhau
+# TC-CONCAT-011: Nối hai chuỗi giống nhau
 
-## Thông tin chung
+## Requirement ID
+FR-CONCAT-01
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CONCAT-011 |
-| Chức năng | Concatenate |
-| Mức độ ưu tiên | Low |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Concatenate / Functional / Equivalence Partitioning
 
-## Mục tiêu
-
-Xác minh hệ thống nối đúng khi cả hai đầu vào có giá trị giống hệt nhau.
-
-## Điều kiện tiên quyết
-
+## Preconditions
 - Truy cập được trang Basic Calculator.
 - Chọn build cần kiểm thử.
 - Nhấn **Clear**.
 
-## Dữ liệu kiểm thử
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First number      | abc |
+| Second number     | abc |
+| Operation         | Concatenate |
 
-| Trường | Giá trị |
-|---|---|
-| First number | abc |
-| Second number | abc |
-| Operation | Concatenate |
+## Test steps
+1. Nhập `abc` vào First number.
+2. Nhập `abc` vào Second number.
+3. Chọn **Concatenate** trong danh sách Operation.
+4. Nhấn **Calculate**.
 
-## Các bước thực hiện
+## Expected result
+Ô Answer hiển thị `abcabc` (hai chuỗi giống nhau được nối lại, hệ thống không bỏ qua hay dedup).
 
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Nhập `abc` vào First number | Chuỗi hiển thị đúng |
-| 2 | Nhập `abc` vào Second number | Chuỗi hiển thị đúng |
-| 3 | Chọn Concatenate | Concatenate được chọn |
-| 4 | Nhấn Calculate | Answer hiển thị `abcabc` |
-
-## Kết quả mong đợi cuối cùng
-
-Ô Answer hiển thị `abcabc` (hai chuỗi giống nhau được nối lại, không bị trùng lặp hay bỏ qua).
-
-## Ghi chú
-
-Kiểm tra hệ thống không áp dụng bất kỳ logic deduplication nào.
+## Status / Related bugs
+Not Run / None

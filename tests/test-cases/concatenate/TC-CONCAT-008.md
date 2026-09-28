@@ -1,46 +1,31 @@
-# TC-CONCAT-008 — Nối chuỗi chữ hoa và chữ thường
+# TC-CONCAT-008: Nối chuỗi chữ hoa và chữ thường
 
-## Thông tin chung
+## Requirement ID
+FR-CONCAT-03
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CONCAT-008 |
-| Chức năng | Concatenate |
-| Mức độ ưu tiên | Medium |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Concatenate / Functional / Equivalence Partitioning
 
-## Mục tiêu
-
-Xác minh hệ thống giữ nguyên chữ hoa/thường khi nối chuỗi (không tự động chuyển đổi case).
-
-## Điều kiện tiên quyết
-
+## Preconditions
 - Truy cập được trang Basic Calculator.
 - Chọn build cần kiểm thử.
 - Nhấn **Clear**.
 
-## Dữ liệu kiểm thử
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First number      | HELLO |
+| Second number     | world |
+| Operation         | Concatenate |
 
-| Trường | Giá trị |
-|---|---|
-| First number | HELLO |
-| Second number | world |
-| Operation | Concatenate |
+## Test steps
+1. Nhập `HELLO` vào First number.
+2. Nhập `world` vào Second number.
+3. Chọn **Concatenate** trong danh sách Operation.
+4. Nhấn **Calculate**.
 
-## Các bước thực hiện
+## Expected result
+Ô Answer hiển thị `HELLOworld` (giữ nguyên chữ hoa/thường, hệ thống không tự động chuyển đổi case).
 
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Nhập `HELLO` vào First number | Chuỗi hiển thị đúng |
-| 2 | Nhập `world` vào Second number | Chuỗi hiển thị đúng |
-| 3 | Chọn Concatenate | Concatenate được chọn |
-| 4 | Nhấn Calculate | Answer hiển thị `HELLOworld` |
-
-## Kết quả mong đợi cuối cùng
-
-Ô Answer hiển thị `HELLOworld` (giữ nguyên chữ hoa/thường, không bị chuyển đổi).
-
-## Ghi chú
-
-Kiểm tra tính case-sensitive của chức năng nối chuỗi.
+## Status / Related bugs
+Not Run / None

@@ -1,47 +1,31 @@
-# TC-CONCAT-001 — Nối hai chuỗi
+# TC-CONCAT-001: Nối hai chuỗi chữ thông thường
 
-## Thông tin chung
+## Requirement ID
+FR-CONCAT-01
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CONCAT-001 |
-| Chức năng | Concatenate |
-| Mức độ ưu tiên | High |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Concatenate / Functional / Equivalence Partitioning
 
-## Mục tiêu
-
-Xác minh hệ thống nối hai đầu vào như chuỗi và không kiểm tra kiểu số.
-
-## Điều kiện tiên quyết
-
+## Preconditions
 - Truy cập được trang Basic Calculator.
 - Chọn build cần kiểm thử.
 - Nhấn **Clear**.
 
-## Dữ liệu kiểm thử
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First number      | Hello |
+| Second number     | World |
+| Operation         | Concatenate |
 
-| Trường | Giá trị |
-|---|---|
-| First number | Hello |
-| Second number | World |
-| Operation | Concatenate |
-| Integers only | Không áp dụng |
+## Test steps
+1. Nhập `Hello` vào First number.
+2. Nhập `World` vào Second number.
+3. Chọn **Concatenate** trong danh sách Operation.
+4. Nhấn **Calculate**.
 
-## Các bước thực hiện
+## Expected result
+Ô Answer hiển thị `HelloWorld` (nối hai chuỗi, không kiểm tra kiểu số, Integers only bị vô hiệu hóa).
 
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Nhập `Hello` vào First number | Chuỗi hiển thị đúng |
-| 2 | Nhập `World` vào Second number | Chuỗi hiển thị đúng |
-| 3 | Chọn Concatenate | Concatenate được chọn và Integers only không thể sử dụng |
-| 4 | Nhấn Calculate | Answer hiển thị `HelloWorld` |
-
-## Kết quả mong đợi cuối cùng
-
-Ô Answer hiển thị `HelloWorld`.
-
-## Ghi chú
-
-Không áp dụng kiểm tra dữ liệu số cho phép nối chuỗi.
+## Status / Related bugs
+Not Run / None

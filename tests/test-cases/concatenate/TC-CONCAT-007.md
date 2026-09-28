@@ -1,47 +1,31 @@
-# TC-CONCAT-007 — Nối chuỗi có khoảng trắng
+# TC-CONCAT-007: Nối chuỗi có khoảng trắng
 
-## Thông tin chung
+## Requirement ID
+FR-CONCAT-03
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CONCAT-007 |
-| Chức năng | Concatenate |
-| Mức độ ưu tiên | Low |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Concatenate / Functional / Equivalence Partitioning
 
-## Mục tiêu
-
-Xác minh hệ thống giữ nguyên khoảng trắng khi nối chuỗi (không tự động trim hoặc thêm khoảng trắng).
-
-## Điều kiện tiên quyết
-
+## Preconditions
 - Truy cập được trang Basic Calculator.
 - Chọn build cần kiểm thử.
 - Nhấn **Clear**.
 
-## Dữ liệu kiểm thử
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First number      | Hello |
+| Second number     | (khoảng trắng)World |
+| Operation         | Concatenate |
 
-| Trường | Giá trị |
-|---|---|
-| First number | Hello |
-| Second number | (khoảng trắng)World |
-| Operation | Concatenate |
-| Integers only | Không áp dụng |
+## Test steps
+1. Nhập `Hello` vào First number.
+2. Nhập ` World` (có khoảng trắng ở đầu) vào Second number.
+3. Chọn **Concatenate** trong danh sách Operation.
+4. Nhấn **Calculate**.
 
-## Các bước thực hiện
+## Expected result
+Ô Answer hiển thị `Hello World` (khoảng trắng được giữ nguyên, hệ thống không tự động trim).
 
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Nhập `Hello` vào First number | Chuỗi hiển thị đúng |
-| 2 | Nhập ` World` (có khoảng trắng đầu) vào Second number | Chuỗi hiển thị đúng |
-| 3 | Chọn Concatenate | Concatenate được chọn và Integers only không thể sử dụng |
-| 4 | Nhấn Calculate | Answer hiển thị `Hello World` |
-
-## Kết quả mong đợi cuối cùng
-
-Ô Answer hiển thị `Hello World` (khoảng trắng được giữ nguyên trong kết quả nối).
-
-## Ghi chú
-
-Kiểm tra xem hệ thống có tự động trim khoảng trắng đầu/cuối chuỗi hay không.
+## Status / Related bugs
+Not Run / None

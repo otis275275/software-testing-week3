@@ -1,47 +1,31 @@
-# TC-CONCAT-003 — First number rỗng, Second number có giá trị
+# TC-CONCAT-003: First number rỗng, Second number có giá trị
 
-## Thông tin chung
+## Requirement ID
+FR-CONCAT-02
 
-| Thuộc tính | Nội dung |
-|---|---|
-| Test Case ID | TC-CONCAT-003 |
-| Chức năng | Concatenate |
-| Mức độ ưu tiên | Medium |
-| Người tạo | [Tên thành viên] |
-| Ngày tạo | YYYY-MM-DD |
+## Module / Test type / Technique
+Concatenate / Functional / BVA
 
-## Mục tiêu
-
-Xác minh hành vi của hệ thống khi First number bị bỏ trống và chỉ có Second number có giá trị.
-
-## Điều kiện tiên quyết
-
+## Preconditions
 - Truy cập được trang Basic Calculator.
 - Chọn build cần kiểm thử.
 - Nhấn **Clear**.
 
-## Dữ liệu kiểm thử
+## Test data
+| Field / Parameter | Value |
+|-------------------|-------|
+| First number      | (rỗng) |
+| Second number     | World |
+| Operation         | Concatenate |
 
-| Trường | Giá trị |
-|---|---|
-| First number | (rỗng) |
-| Second number | World |
-| Operation | Concatenate |
-| Integers only | Không áp dụng |
+## Test steps
+1. Để trống First number.
+2. Nhập `World` vào Second number.
+3. Chọn **Concatenate** trong danh sách Operation.
+4. Nhấn **Calculate**.
 
-## Các bước thực hiện
-
-| Bước | Thao tác | Kết quả mong đợi |
-|---:|---|---|
-| 1 | Để trống First number | Ô First number rỗng |
-| 2 | Nhập `World` vào Second number | Giá trị hiển thị đúng |
-| 3 | Chọn Concatenate | Concatenate được chọn và Integers only không thể sử dụng |
-| 4 | Nhấn Calculate | Answer hiển thị `World` |
-
-## Kết quả mong đợi cuối cùng
-
+## Expected result
 Ô Answer hiển thị `World` (chuỗi rỗng ghép với `World`).
 
-## Ghi chú
-
-Kiểm tra trường hợp biên: một đầu vào rỗng.
+## Status / Related bugs
+Not Run / None
